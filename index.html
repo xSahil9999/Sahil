@@ -1,40 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Sahil</h1>
-      <p>Auszubildender Fachinformatiker für Anwendungsentwicklung bei GPB Berlin</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sahil Portfolio</title>
+    <meta name="description" content="Portfolio von Sahil – Auszubildender Fachinformatiker AE. Projekte: B2B‑Kundenportal, Python‑Projekte, XChat." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">S</div>
+          <div>
+            <h1 class="brand__title">Sahil</h1>
+            <p class="brand__sub">Auszubildender Fachinformatiker AE · GPB Berlin</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#about">Über mich</a>
+          <a href="#projects">Projekte</a>
+          <a href="https://github.com/xSahil9999" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
     </header>
 
-    <section>
-      <h2>Über mich</h2>
-      <p>Ich bin ein engagierter Auszubildender im Bereich Fachinformatik mit dem Schwerpunkt Anwendungsentwicklung. Derzeit absolviere ich meine Ausbildung bei GPB Berlin, wo ich praktische Erfahrungen in der Softwareentwicklung sammle und meine Kenntnisse in modernen Webtechnologien vertiefe.</p>
-      <p>Meine Leidenschaft für IT begann mit kleinen Automatisierungsprojekten und hat sich schnell zu einem ernsthaften Interesse an professioneller Softwareentwicklung entwickelt. Besonders fasziniert mich die Frontend-Entwicklung, da ich gerne Benutzeroberflächen gestalte und mit JavaScript interaktive Funktionen umsetze.</p>
-      <p>Ich arbeite regelmäßig an eigenen Projekten, die ich auf GitHub veröffentliche, um mein Wissen zu erweitern und Feedback zu erhalten. Mein Ziel ist es, mich kontinuierlich weiterzuentwickeln und später als Fullstack-Entwickler in einem innovativen Unternehmen zu arbeiten.</p>
-    </section>
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section__title">Über mich</h2>
+          <p>
+            Ich bin ein engagierter Auszubildender im Bereich Fachinformatik (Anwendungsentwicklung).
+            Bei GPB Berlin sammle ich praktische Erfahrung in moderner Web‑Entwicklung und vertiefe
+            mein Wissen in Frontend, Backend und DevOps.
+          </p>
+          <p>
+            Ich arbeite regelmäßig an eigenen Projekten – von Python‑Skripten bis zu Web‑Apps – und
+            veröffentliche diese auf GitHub. Mein Ziel: mich kontinuierlich weiterentwickeln und
+            perspektivisch als Fullstack‑Entwickler Verantwortung übernehmen.
+          </p>
+        </div>
+      </section>
 
-    <section>
-      <h2>Projekte</h2>
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section__title">Projekte</h2>
 
-      <div class="project">
-        <h3>Projekt 1: python_projekte</h3>
-        <p>Ich mich mit Python bisschen beschäftigt und habe paar Projekt gemacht alle sind in dieser Ordner</p>
-        <a href="https://github.com/xSahil9999/python_projekte" target="_blank" class="btn">GitHub ansehen</a>
+          <div class="grid">
+            <article class="card">
+              <h3 class="card__title">B2B‑Kundenportal</h3>
+              <p class="card__text">
+                Webportal mit Rollen (Admin/Kunde/Support), Rechnungsarchiv (PDF), Tickets,
+                REST‑API (DRF), Hintergrundjobs (Celery/Redis) und Docker‑Setup.
+              </p>
+              <ul class="tags">
+                <li>Django</li><li>DRF</li><li>MySQL</li><li>Celery</li><li>Redis</li><li>Docker</li>
+              </ul>
+              <div class="card__actions">
+                <a class="btn" href="https://github.com/xSahil9999/b2b-kundenportal" target="_blank" rel="noopener">GitHub ansehen</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">python_projekte</h3>
+              <p class="card__text">Sammlung kleiner Python‑Projekte und Übungen (Automatisierung, Skripte, CLI).</p>
+              <ul class="tags">
+                <li>Python</li><li>CLI</li><li>Übungen</li>
+              </ul>
+              <div class="card__actions">
+                <a class="btn" href="https://github.com/xSahil9999/python_projekte" target="_blank" rel="noopener">GitHub ansehen</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">XChat</h3>
+              <p class="card__text">Einfache, webbasierte Chat‑App mit Fokus auf UI und Nutzbarkeit.</p>
+              <ul class="tags">
+                <li>Web</li><li>Echtzeit</li><li>UI</li>
+              </ul>
+              <div class="card__actions">
+                <a class="btn" href="https://github.com/xSahil9999" target="_blank" rel="noopener">GitHub ansehen</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Sahil · Kontakt: <a href="https://github.com/xSahil9999" target="_blank" rel="noopener">GitHub</a></p>
       </div>
+    </footer>
+  </body>
+  </html>
 
-      <div class="project">
-        <h3>XChat</h3>
-        <p>XChat ist eine webbasierte Kommunikationsplattform, die Echtzeit-Chat und Sprachanrufe ermöglicht. Nutzer können direkt über den Browser miteinander kommunizieren – schnell, intuitiv und ohne zusätzliche Software.</p>
-        <a href="https://github.com/xSahil9999/python_projekte" target="_blank" class="btn">GitHub ansehen</a>
-      </div>
-    </section>
-  </div>
-</body>
-</html>
